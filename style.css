@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    --amber: #ffbf00;
+    --white: #fff;
+    font-family: Geneva, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-image: url('./stars\ gif.webp');
+}
+
+body {
+    background-image: url('./stars\ gif.webp');
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 8rem;
+    background-image: url('./stars\ gif.webp');
+}
+
+nav .left {
+    font-size: 2rem;
+    background-image: url('./stars\ gif.webp');
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* gap: 1rem; */
+    background-image: url('./stars\ gif.webp');
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+
+    font-weight: bold;
+    background-image: url('./stars\ gif.webp');
+}
+
+nav ul a:hover {
+    color: var(--amber);
+    text-decoration: underline;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.left p {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-image: url('./stars\ gif.webp');
+}
+
+span {
+    color: var(--amber);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: black;
+    border: none;
+    display: none;
+    background-color: var(--white);
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--amber);
+    padding: 1rem 1rem;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.home {
+    padding: 4rem;
+    padding-bottom: 3rem;
+}
+
+.home button {
+    font-size: 1.8rem;
+
+}
+
+.home p {
+    line-height: 1.5;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: large;
+    color: var(--white);
+}
+
+.home h1 {
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.home-img {
+    padding-right: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    position: relative;
+    top: 3rem;
+    cursor: pointer;
+    height: 22rem;
+    width: 22rem;
+    margin-bottom: 5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 2rem var(--amber);
+}
+
+.home-img:hover img {
+    border-radius: 50%;
+    box-shadow: 0 0 2rem var(--amber), 0 0 3rem var(--amber);
+}
+
+#home {
+    display: flex;
+    padding-top: 5rem;
+    gap: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('./stars\ gif.webp');
+}
+
+hr {
+    color: var(--amber);
+}
+
+.heading {
+    text-align: center;
+}
+
+.skills {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: large;
+    padding: 1rem;
+    gap: 2rem;
+    background-image: url('./stars\ gif.webp');
+}
+
+
+.techstack {
+    background-color: var(--white);
+    height: 20rem;
+    width: 18rem;
+    padding: 1rem 1rem;
+    font-size: x-large;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    border-radius: 1rem;
+}
+
+.techstack p {
+    color: var(--amber);
+    font-weight: bold;
+}
+.techstack li {
+    color: var(--white);
+    list-style: none;
+}
+
+.projects {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    background-image: url('./stars\ gif.webp');
+}
+
+.heading {
+    font-size: 2rem;
+    color: var(--amber);
+    text-decoration: underline var(--amber);
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.box {
+    justify-content: center;
+    height: 15rem;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    border-radius: 0.5rem;
+    padding: 2rem 2rem;
+    margin: 1rem 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box center p {
+    font-size: large;
+    color: var(--amber);
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.box p {
+    font-size: large;
+    color: var(--white);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 1rem 10rem;
+    background-image: url('./stars\ gif.webp');
+}
+
+.resumeheading {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.resumediv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 35rem;
+    padding: 3rem;
+    background-color: var(--white);
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    border-radius: 0.5rem;
+}
+
+#downloadBtn {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: var(--amber);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin: 7rem;
+}
+
+.formbox {
+    background-image: url('./stars\ gif.webp');
+}
+
+.formbox h2 {
+    color: var(--white);
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+input {
+    height: 2.5rem;
+    width: 30rem;
+    padding: 0.1rem 0.2rem;
+}
+
+textarea {
+    height: 5rem;
+    width: 30rem;
+    padding: 0.2rem 0.2rem;
+}
+
+.formbox button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    background-color: var(--amber);
+    font-size: x-large;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 3.8rem;
+    background: transparent;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--amber);
+    cursor: pointer;
+    width: 3rem;
+}
+
+h6 {
+    font-size: large;
+    color: var(--amber);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-image: url('./stars\ gif.webp');
+}
+
+hr {
+    margin: 15vh 0;
+}
+
+#firstsection {
+    margin-top: 0 !important;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+
+    .techstack {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+        height: 18rem;
+        width: 20rem;
+    }
+
+    .techstack p,
+    .techstack li {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        padding: 2rem 1rem;
+        height: 4rem;
+    }
+
+    nav ul a {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    #dropdownButton {
+        display: none;
+    }
+
+    .left p {
+        font-size: 2rem;
+    }
+
+    .box {
+        height: 18rem;
+    }
+
+    .home {
+        padding: 2rem 4rem;
+    }
+
+    #home {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .home-img {
+        padding: 0;
+    }
+
+    .home-img img {
+        margin: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .home-btn {
+        margin: 0 3rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .resumediv {
+        margin: 10rem;
+        padding: 3rem 5rem 5rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .skills {
+        grid-template-columns: 1fr;
+        padding: 5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .right {
+        display: none;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    #dropdownButton {
+        display: block;
+    }
+
+    .left p {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .dropdown-container {
+        display: block;
+    }
+
+    .resumeheading {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.2rem;
+        font-weight: bolder;
+    }
+
+#lang{
+    margin-left: 0.2rem;
+}
+
+    .dropdown-menu {
+        position: absolute;
+        background-color: #f9f9f9;
+        width: auto;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.539);
+        z-index: 1;
+        top: 100%;
+        text-align: right;
+        right: 0;
+        margin-right: 4vw;
+        display: none;
+    }
+
+    .dropdown-menu a {
+        color: var(--amber);
+        background-color: black;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.539);
+        padding: 1vh 2vw;
+        width: 30vw;
+        text-decoration: none;
+        display: block;
+        font-size: 1rem;
+    }
+
+    #downloadBtn {
+        width: 12rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .resumeheading{
+        font-size: 1.25rem;
+    }
+
+    .navbtn {
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+        color: var(--amber);
+        background-color: black;
+    }
+
+    .home button {
+        width: 100%;
+
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .techstack {
+        width: 20rem;
+    }
+
+    .resume {
+        padding: 2rem 2rem;
+    }
+
+    .resumediv {
+        width: 22em;
+        font-size: 1rem;
+        padding: 2rem 2rem;
+    }
+
+    input,
+    textarea {
+        width: 20rem;
+    }
+    form button {
+        width: 100%;
+    }
+    hr {
+        margin: 10vh 0;
+    }
+}
