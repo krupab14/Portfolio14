@@ -2,16 +2,24 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const PORT = 3000
+
 const app = express()
 
+require('dotenv').config();
+
+const PORT = process.env.PORT
 app.use(cors())
 app.use(bodyParser.json())
 
-mongoose.connect('mongodb://127.0.0.1:27017/portfolio', {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-})
+}).then(() => {
+    console.log("MongoDB connected");
+}).catch((err) => {
+    console.error("MongoDB connection error:", err);
+});
+
 let userSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -38,3 +46,6 @@ app.post('/submit', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`)
 })
+
+// frontend data 
+
